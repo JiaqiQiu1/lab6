@@ -1,0 +1,50 @@
+<html>
+<body>
+    <link rel="stylesheet" href="css/styles.css">
+    <table id="t01">
+        <tr>
+            <th>
+                Task Name
+            </th>
+            <th>
+                Task due date 
+            </th>
+            <th>
+                Task Description
+            </th>
+            <th>
+                Task ID
+            </th>
+            <th>
+                Task Status
+            </th>
+            <th>
+                Task Assigned to
+            </th>
+        </tr>
+        <% for(let i=0;i<database.length;i++){ %>
+        <tr>
+            <td>
+                <%= database[i].TaskName %>
+            </td>
+            <td>
+                <%= database[i].TaskDueDate %>
+            </td>
+            <td>
+                <%= database[i].TaskDescription %>
+            </td>
+            <td>
+                <%= database[i]._id %>
+            </td>
+            <td>
+                <%= database[i].TaskStatus %>
+            </td>
+            <td>
+                <%= database[i].TaskAssign %>
+            </td>
+        </tr>
+        <%} %>
+    </table>
+</body>
+Click <a href="/"> HERE</a> to return to home page!!
+</html>
