@@ -13,7 +13,7 @@ app.use(bodyParser.urlencoded({
     extended: false
 }));
 let MongoClient = mongodb.MongoClient;
-let url = "mongodb://104.197.223.143:27017/";
+let url = "mongodb://127.0.0.1:27017/";
 let db;
 //The MongoDB Node.js driver rewrote the tool it uses to parse MongoDB connection strings.
 //Because this is such a big change, they put the new connection string parser behind a flag.
